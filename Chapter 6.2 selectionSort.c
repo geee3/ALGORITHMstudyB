@@ -22,9 +22,10 @@ void selectionSort(int arr[], int size) {
     int min, pointer;
 
     for(i = 0; i < size - 1; i++) {
-        min = arr[j];
+        min = arr[i];
+        pointer = i;
         for(j = i; j < size; j++) {
-            if(min > arr[j]) {
+            if(min >= arr[j]) {
                 min = arr[j];
                 pointer = j;
             }
