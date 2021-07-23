@@ -24,11 +24,10 @@ This gives insertion sort a quadratic running time, O(n^2)
 void insertionSort(int arr[], int size) {
     int i, j, k;
     int location, insertion, maxFlag;
-
+    
     for(i = 1; i < size; i++) {
         maxFlag = 0;
         insertion = arr[i];
-
         for(j = 0; j < i; j++) {
             if(arr[i] <= arr[j]) {
                 location = j;
@@ -38,7 +37,6 @@ void insertionSort(int arr[], int size) {
         }
         if(maxFlag == 0)
             location = i;
-
         for(k = i; k > location; k--) {
             arr[k] = arr[k - 1];
         }
