@@ -19,7 +19,6 @@ void insertionSort(int arr[], int size) {
     for(i = 1; i < size; i++) {
         maxFlag = 0;
         insertion = arr[i];
-
         for(j = 0; j < i; j++) {
             if(arr[i] <= arr[j]) {
                 location = j;
@@ -29,7 +28,6 @@ void insertionSort(int arr[], int size) {
         }
         if(maxFlag == 0)
             location = i;
-
         for(k = i; k > location; k--) {
             arr[k] = arr[k - 1];
         }
@@ -40,26 +38,23 @@ void insertionSort(int arr[], int size) {
 void shellSort(int arr[], int size) {
     int i, j, gap, pointer, escapeFlag, endFlag = 0;
     int *shell;
-    
     gap = size / 2;
     if(gap % 2 == 0)
         gap += 1;
     shell = (int *)malloc(sizeof(int) * size);
-
+    
     while(endFlag == 0) {
         escapeFlag = 0;
         pointer = 0;
-        
+
         while(escapeFlag == 0) {
             for(i = 0; i < size; i++)
                 shell[i] = 0;
             j = 0;
-
             for(i = pointer; i < size; i += gap)
                 shell[j++] = arr[i];
             insertionSort(shell, j);
             j = 0;
-
             for(i = pointer; i < size; i += gap)
                 arr[i] = shell[j++];
             pointer += 1;
