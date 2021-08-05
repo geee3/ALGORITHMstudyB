@@ -1,6 +1,6 @@
 /*
 by GEEE3, July 23, 2021
-Shellsort is a highly efficient sorting algorithm and is based on insertion sort algorithm
+Shell sort is a highly efficient sorting algorithm and is based on insertion sort algorithm
 This algorithm can be seen as either a generalization of sorting by exchange or sorting by insertion
 It avoids large shifts as in case of insertion sort,
 if the smaller value is to the far right and has to be moved to the far left
