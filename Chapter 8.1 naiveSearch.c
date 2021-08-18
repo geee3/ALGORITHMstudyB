@@ -17,8 +17,6 @@ void naiveSearch(char text[], char pattern[]) {
     int patternLength = strlen(pattern);
     int matchFlag;
 
-    printf("Output:\n");
-
     for(int i = 0; i <textLength; i++) {
         matchFlag = 0;
         for(int j = 0; j < patternLength; j++) {
@@ -34,12 +32,13 @@ int main(void) {
     char *text = "AABAACAADAABAABA";
     char *pattern = "AABA";
 
-    printf("[Naive Algorithm]\n");
+    printf("[Naive Algorithm for Pattern Searching]\n");
     printf("\nInput:\n");
     printf("text = %s\n", text);
     printf("pattern = %s\n", pattern);
     printf("\n");
 
+    printf("Output:\n");
     naiveSearch(text, pattern);
     return 0;
 }
