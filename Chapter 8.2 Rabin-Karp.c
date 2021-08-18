@@ -61,12 +61,13 @@ int main(void) {
     char *text = "AABAACAADAABAABA";
     char *pattern = "AABA";
 
-    printf("[Rabin-Karp Algorithm]\n");
+    printf("[Rabin-Karp Algorithm for Pattern Searching]\n");
     printf("\nInput:\n");
     printf("text = %s\n", text);
     printf("pattern = %s\n", pattern);
     printf("\n");
 
+    printf("Output:\n");
     RabinKarpSearch(text, pattern);
     return 0;
 }
