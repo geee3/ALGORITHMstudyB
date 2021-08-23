@@ -45,7 +45,7 @@ int main(void) {
         printf("3. Delete Member.\n");
         printf("4. Print Capacity.\n");
         printf("5. Set Operation.\n");
-        printf("6. Terminate\n");
+        printf("6. Terminate.\n");
         scanf("%d", &command);
         printf("\n");
 
