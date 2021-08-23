@@ -107,7 +107,7 @@ int main(void) {
         printf("1. Add Data.\n");
         printf("2. Delete Data.\n");
         printf("3. Print List.\n");
-        printf("4. Terminate\n");
+        printf("4. Terminate.\n");
         scanf("%d", &command);
         getchar();
         printf("\n");
